@@ -1,0 +1,147 @@
+body{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+styled-table {
+
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+.styled-table th, td {
+    padding: 15px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+a:link, a:visited {
+    background-color: #009879;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.plane-info{
+    display: flex;
+    justify-content: space-between;
+}
+.plane-info .input-box{
+    display: flex;
+    align-items: center;
+}
+.plane-info .input-box label{
+    min-width: 120px;
+}
+.plane-info .input-box input{
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 300px;
+}
+.plane-info .input-box textarea{
+    width: 300px;
+    padding: 5px;
+}
+legend{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+fieldset{
+    padding: 20px 60px;
+}
+.row {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.col-12{
+    display: inline-block;
+    justify-content: space-between;
+
+
+}
+.col-12 .select {
+    padding: 10px  ;
+    margin-bottom: 15px;
+    width: 200px;
+    align-items: center;
+}
+
+
+/* CSS */
+button{
+    appearance: none;
+    background-color: #009879;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+button:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: #009879;
+}
+
+button:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+}
+
+button:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+button:active {
+    background-color:#009879;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
